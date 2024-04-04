@@ -84,8 +84,6 @@ while True:
     yellow_line_len = abs(screen_w//2 - xy[0])
     blue_line_len = abs(screen_h//2 - xy[1])
 
-    
-
     dis = distance(move_xy)
 
     dis_in_cm = dis_cm(dis, ppi)
@@ -155,10 +153,6 @@ while True:
             move_xy[1] += returning_speedY
         
 
-
-        
-
-    
     pygame.draw.line(screen, (255, 255, 0), (screen_w//2,move_xy[1]), move_xy, 3) # yellow line touching red aixs
     pygame.draw.line(screen, (0, 0, 255), (move_xy[0],screen_h//2), move_xy, 3) # blue line touching green aixs
     
